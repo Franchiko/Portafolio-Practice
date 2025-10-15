@@ -5,3 +5,67 @@
 	font-size: 16px;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+header.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 25px;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: white;
+}
+
+h2.title {
+	font-size: 24px;
+}
+nav.nav ul.list-links {
+	list-style: none;
+	display: flex;
+	gap: 15px;
+}
+
+.links a {
+	color: white;
+	text-decoration: none;
+	font-weight: lighter;
+	transition: color 0.3s;
+}
+
+section#inicio {
+	text-align: center;
+	padding: 100px 20px;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: white;
+}
+
+h3.title-main {
+	font-size: 32px;
+	margin-bottom: 10px;
+}
+
+p.paragraph-main {
+	font-size: 18px;
+	margin: 25px;
+}
+button {
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #667eea;
+	background-color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+section#Servicios {
+	padding: 50px 20px;
+	background-color: #f4f4f4;
+	text-align: center;
+}
+h3.services {
+	font-size: 44px;
+	margin: 40px;
+	color: #333;
+}
