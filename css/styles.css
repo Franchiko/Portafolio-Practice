@@ -7,6 +7,12 @@
 }
 
 header.header {
+	position: fixed; /* Fija el header */
+	top: 0; /* Lo coloca en la parte superior */
+	left: 0; /* Lo alinea desde el borde izquierdo */
+	right: 0; /* Lo extiende hasta el borde derecho */
+	width: 100%; /* Asegura que ocupe todo el ancho */
+	z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -15,20 +21,30 @@ header.header {
 	color: white;
 }
 
+body {
+	padding-top: 90px; /* Ajusta este valor según la altura de tu header */
+}
+
 h2.title {
 	font-size: 24px;
 }
 nav.nav ul.list-links {
 	list-style: none;
 	display: flex;
-	gap: 15px;
+	gap: 30px;
+	margin-right: 40px;
+	
 }
 
 .links a {
 	color: white;
 	text-decoration: none;
 	font-weight: lighter;
-	transition: color 0.3s;
+	transition: color 0.5s;
+	&:hover {
+		color: rgba(255, 255, 255, 0.5);
+		transition: color 0.5s;
+	}
 }
 
 section#inicio {
@@ -59,6 +75,12 @@ button {
 	transition: background-color 0.3s, color 0.3s;
 }
 
+button:hover {
+	background-color: #d13636;
+	color: white;
+	transform: translateY(-5px);
+}
+
 section#Servicios {
 	padding: 50px 20px;
 	background-color: #f4f4f4;
@@ -81,7 +103,8 @@ section#Servicios .card {
 }
 
 .card .icon-card {
-	font-size: 40px;
+	font-size: 25px;
+	padding: 8px;
 	margin-bottom: 15px;
 }
 
@@ -90,10 +113,15 @@ section#Servicios .card {
 	border-radius: 50px;
 	padding: 5px;
 	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	&:hover {
+		background: linear-gradient(135deg, #d13636 0%, #ff7e5f 100%);
+		transform: scale(1.2);
+		transition: transform 0.3s, box-shadow 0.3s;
+	}
 }
 
 .card:hover {
-	transform: translateY(-10px);
+	transform: translateY(-5px);
 	box-shadow: 8px 12px 20px rgba(3px, 3px, 3px, 0.4);
 }
 
